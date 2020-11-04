@@ -31,8 +31,8 @@ variable "env" {
 }
 
 variable "hostname" {
-  description = "DNS Hostname for the bastion host. Defaults to $${VPC NAME}.$${dns_zone} if hostname is not set"
-  default     = ""
+  description = "DNS Hostname for the bastion host. Defaults if hostname is not set"
+  default     = "vault-test"
 }
 
 variable "iam_path" {
